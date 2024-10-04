@@ -1,0 +1,69 @@
+{
+  "announcements": [],
+  "categories": [
+    {
+      "id": "1",
+      "name": "General Announcements",
+      "image": "https://example.com/images/general-announcements.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Events",
+      "image": "https://example.com/images/events.jpg"
+    },
+    {
+      "id": "3",
+      "name": "News",
+      "image": "https://example.com/images/news.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Offers & Promotions",
+      "image": "https://example.com/images/offers.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Community Updates",
+      "image": "https://example.com/images/community-updates.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Health & Safety",
+      "image": "https://example.com/images/health-safety.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Feedback & Surveys",
+      "image": "https://example.com/images/feedback-surveys.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Job Opportunities",
+      "image": "https://example.com/images/job-opportunities.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Resources & Guides",
+      "image": "https://example.com/images/resources-guides.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Technology Updates",
+      "image": "https://example.com/images/technology-updates.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "5bb1",
+      "name": "Elvin",
+      "email": "elvin@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "544e",
+      "name": "Farah",
+      "email": "farashka15@gmail.com",
+      "password": "123456789"
+    }
+  ]
+}
