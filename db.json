@@ -1,69 +1,81 @@
 {
-  "announcements": [],
+  "announcements": [
+    {
+      "id": "3793",
+      "userId": "39ce",
+      "title": "BMW F30 rent per hour",
+      "description": "Experience the Ultimate Driving Machine!\n\nRent our luxurious BMW F30 for an exhilarating driving experience that combines performance, style, and comfort. This sleek sedan features a powerful engine and precise handling, making it perfect for both city cruising and open highways.\n\nKey Features:\n\nEngine: Enjoy a responsive and dynamic driving experience with the F30's efficient and powerful engine options.\nInterior: Immerse yourself in the comfort of a meticulously designed interior with premium materials, advanced technology, and spacious seating for up to five passengers.\nInfotainment System: Stay connected and entertained with BMW's intuitive infotainment system, complete with navigation, Bluetooth connectivity, and high-quality sound.\nSafety: Drive with confidence thanks to advanced safety features, including multiple airbags, stability control, and parking sensors.\nRental Details:\n\nPrice: $XX per hour (minimum 2-hour rental)\nPick-up/Drop-off: Convenient locations available for pick-up and drop-off.\nMileage: XX miles included per rental hour, with additional mileage available at a nominal fee.\nPerfect For:\n\nSpecial occasions, weekend getaways, or simply enjoying a drive in one of the best luxury sedans on the market.\nBook your BMW F30 today and elevate your driving experience!",
+      "price": "80",
+      "categoryId": "7",
+      "location": "Baku Yasamal",
+      "imageUrl": "https://res.cloudinary.com/dj294wevk/image/upload/v1728140018/lbq3sgucjatb94kvjqbu.webp",
+      "date": "2024-10-05",
+      "time": "18:51",
+      "contactInfo": "tel : 09999999"
+    },
+    {
+      "id": "69b5",
+      "userId": "39ce",
+      "title": "2nd hand guitar",
+      "description": "For Sale: Quality Second-Hand Acoustic Guitar - Perfect for Beginners and Enthusiasts!\n\nAre you ready to strum your first chord or add a new instrument to your collection? This beautiful second-hand acoustic guitar is the perfect choice!\n\nFeatures:\n\nBrand: [Insert Brand Name]\nModel: [Insert Model Name]\nCondition: Gently used, with minor signs of wear that add character.\nWood Type: [Insert type of wood, e.g., spruce top, mahogany back and sides], providing rich, resonant sound.\nSize: Standard dreadnought body, perfect for all playing styles.\nDetails:\n\nThis guitar has been well-maintained and comes from a smoke-free home. It delivers excellent sound quality, making it perfect for practice, performances, or jamming with friends.\nIncludes original [case, strap, or any accessories, if available].\nIdeal for beginners looking for their first instrument or seasoned players seeking an affordable option.\nWhy I’m Selling: I'm parting with this guitar as I’m upgrading to a higher-end model. I want to pass it on to someone who will enjoy and cherish it as much as I have.\n\nPrice: [Insert Price] - Cash only, please.\n\nFeel free to reach out for more details or to schedule a time to try it out. Don’t miss this chance to own a great guitar at a fantastic price!",
+      "price": "120",
+      "categoryId": "4",
+      "location": "Zaqatala",
+      "imageUrl": "https://res.cloudinary.com/dj294wevk/image/upload/v1728140641/ggwddmhzkzxdfhfpfvlp.jpg",
+      "date": "2024-10-05",
+      "time": "19:02",
+      "contactEmail": "elvin@gmail.com",
+      "contactPhone": "+994-055-555-55-55"
+    }
+  ],
   "categories": [
     {
       "id": "1",
-      "name": "General Announcements",
-      "image": "https://example.com/images/general-announcements.jpg"
+      "name": "Jobs",
+      "image": "https://picsum.photos/1205/505"
     },
     {
       "id": "2",
-      "name": "Events",
-      "image": "https://example.com/images/events.jpg"
+      "name": "Home or Rent",
+      "image": "https://picsum.photos/1205/505"
     },
     {
       "id": "3",
       "name": "News",
-      "image": "https://example.com/images/news.jpg"
+      "image": "https://picsum.photos/1205/505"
     },
     {
       "id": "4",
-      "name": "Offers & Promotions",
-      "image": "https://example.com/images/offers.jpg"
+      "name": "Second Hand Item Sales",
+      "image": "https://picsum.photos/1205/505"
     },
     {
       "id": "5",
-      "name": "Community Updates",
-      "image": "https://example.com/images/community-updates.jpg"
+      "name": "Games",
+      "image": "https://picsum.photos/1205/505"
     },
     {
       "id": "6",
-      "name": "Health & Safety",
-      "image": "https://example.com/images/health-safety.jpg"
+      "name": "Events",
+      "image": "https://picsum.photos/1205/505"
     },
     {
       "id": "7",
-      "name": "Feedback & Surveys",
-      "image": "https://example.com/images/feedback-surveys.jpg"
+      "name": "Car Rents",
+      "image": "https://picsum.photos/1205/505"
     },
     {
       "id": "8",
-      "name": "Job Opportunities",
-      "image": "https://example.com/images/job-opportunities.jpg"
-    },
-    {
-      "id": "9",
-      "name": "Resources & Guides",
-      "image": "https://example.com/images/resources-guides.jpg"
-    },
-    {
-      "id": "10",
-      "name": "Technology Updates",
-      "image": "https://example.com/images/technology-updates.jpg"
+      "name": "Tours",
+      "image": "https://picsum.photos/1205/505"
     }
   ],
   "users": [
     {
-      "id": "5bb1",
+      "id": "39ce",
       "name": "Elvin",
       "email": "elvin@gmail.com",
       "password": "123"
-    },
-    {
-      "id": "544e",
-      "name": "Farah",
-      "email": "farashka15@gmail.com",
-      "password": "123456789"
     }
   ]
 }
