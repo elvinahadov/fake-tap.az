@@ -20,7 +20,7 @@ const SingleAnnouncements = ({
           <p className="leading-relaxed font-bold text-red-500 text-2xl">
             {title}
           </p>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mb-3">
             <h2 className="text-lg text-gray-900 font-medium title-font">
               {location}
             </h2>
@@ -29,7 +29,7 @@ const SingleAnnouncements = ({
             </p>
           </div>
           <div className="w-full h-[200px] overflow-auto">
-            <p className="text-red-500 text-[22px] ">
+            <p className="text-red-500 text-[16px] ">
               {description}
             </p>
           </div>

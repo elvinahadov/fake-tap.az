@@ -10,7 +10,6 @@ const Announcements = () => {
   }
 
   useEffect(()=>{
-    console.log(data.description)
     fetchAnnouncements()
   },[])
   return (

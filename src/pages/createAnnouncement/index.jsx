@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate to navigate to login if needed
 
 const CreateAnnouncement = () => {
   const [categories, setCategories] = useState([]);
@@ -10,28 +11,42 @@ const CreateAnnouncement = () => {
   const [categoryId, setCategoryId] = useState("");
   const [file, setFile] = useState(null);
   const [user, setUser] = useState(null);
-
-  // Separate state for contact details
   const [contactEmail, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
-
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const [time, setTime] = useState(
     new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
   );
 
-  // Cloudinary configurations
   const cloudName = "dj294wevk";
   const uploadPreset = "hof1ji4h";
 
-  const fetchUserData = async () => {
-    const response = await fetch("http://localhost:3001/users");
-    const data = await response.json();
-    const currentUser = data.find(
-      (user) => user.email === localStorage.getItem("userEmail")
-    );
-    setUser(currentUser);
-  };
+  const userEmail = localStorage.getItem("userEmail");
+  const navigate = useNavigate(); // Hook to navigate between routes
+
+  useEffect(() => {
+    if (!userEmail) {
+      alert("Please log in to create an announcement.");
+      navigate("/login"); // Redirect user to login page
+      return; // Prevent further execution if not logged in
+    }
+
+    const fetchUserData = async () => {
+      const response = await fetch("http://localhost:3001/users");
+      const data = await response.json();
+      const currentUser = data.find((user) => user.email === userEmail);
+      setUser(currentUser);
+    };
+
+    const fetchCategories = async () => {
+      const response = await fetch("http://localhost:3001/categories");
+      const data = await response.json();
+      setCategories(data);
+    };
+
+    fetchUserData();
+    fetchCategories();
+  }, [userEmail, navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -87,8 +102,8 @@ const CreateAnnouncement = () => {
         throw new Error("Network response was not ok");
       }
 
-      const result = await response.json();
       alert("Announcement submitted successfully");
+
       // Reset form fields
       setTitle("");
       setDescription("");
@@ -109,17 +124,6 @@ const CreateAnnouncement = () => {
       alert("There was a problem with the fetch operation");
     }
   };
-
-  const fetchCategories = async () => {
-    const response = await fetch("http://localhost:3001/categories");
-    const data = await response.json();
-    setCategories(data);
-  };
-
-  useEffect(() => {
-    fetchUserData();
-    fetchCategories();
-  }, []);
 
   return (
     <section className="flex items-center justify-center min-h-screen bg-red-100">
@@ -235,6 +239,7 @@ const CreateAnnouncement = () => {
             className="mt-1 block w-full p-2 border border-gray-300 rounded"
           />
         </div>
+
         <div className="mb-4">
           <label
             htmlFor="time"
@@ -245,8 +250,8 @@ const CreateAnnouncement = () => {
           <input
             type="time"
             id="time"
-            value={time} // Use the time state variable
-            onChange={(e) => setTime(e.target.value)} // Allow user to change time if needed
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
             required
             className="mt-1 block w-full p-2 border border-gray-300 rounded"
           />
@@ -268,6 +273,7 @@ const CreateAnnouncement = () => {
             className="mt-1 block w-full p-2 border border-gray-300 rounded"
           />
         </div>
+
         <div className="mb-4">
           <label
             htmlFor="contactPhone"

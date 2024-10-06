@@ -68,7 +68,16 @@ const Header = () => {
               {`Hi, ${loggedInUser.name}`}
             </h1>
           </div>
-        ) : null}
+        ) : (
+          <Link to={"/login"}>
+            <button
+              onClick={handleLogout}
+              className="inline-flex items-center text-white bg-red-600 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-base mt-4 md:mt-0"
+            >
+              Log in
+            </button>
+          </Link>
+        )}
         {/* Render nothing if user is not logged in */}
       </div>
     </header>

@@ -8,20 +8,22 @@ import Categories from "./pages/categories";
 import CreateAnnouncement from "./pages/createAnnouncement/index.jsx";
 import UserAnnouncements from "./pages/userAnnouncements/index.jsx";
 import DetailPage from "./pages/detailPage/index.jsx";
+import SingleCategoryPage from "./pages/singleCategoryPage/index.jsx";
 
-function App({children}) {
+function App({ children }) {
   return (
     <>
       <Layout>
         {children}
         <Routes>
-          <Route path="/categories" element={<Categories/>}/>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/register" element={<Register/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/createAnnouncement" element={<CreateAnnouncement/>} />
-          <Route path="/userAnnouncements" element={<UserAnnouncements/>} />
-          <Route path="/detailPage/:id" element={<DetailPage/>} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/createAnnouncement" element={<CreateAnnouncement />} />
+          <Route path="/userAnnouncements" element={<UserAnnouncements />} />
+          <Route path="/detailPage/:id" element={<DetailPage />} />
+          <Route path="/categoryPage/:categoryId" element={<SingleCategoryPage />} />
         </Routes>
       </Layout>
     </>

@@ -1,9 +1,9 @@
 import React from "react";
 
-const SingleCategory = ({name,id,image}) => {
+const SingleCategory = ({name,image}) => {
   return (
-    <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-      <div class="rounded-lg h-64 overflow-hidden">
+    <div className="w-full p-4 sm:mb-0 mb-6">
+      <div className="rounded-lg w-full h-64 overflow-hidden">
         <img
           alt="content"
           className="object-cover object-center h-full w-full"

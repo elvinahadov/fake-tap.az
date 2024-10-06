@@ -9,8 +9,8 @@ const Categories = () => {
     const response = await fetch("http://localhost:3001/categories");
     const data = await response.json();
     setCategories(data);
-    console.log(data, "data");
   };
+
   useEffect(() => {
     fetchCategories();
   }, []);
@@ -27,24 +27,25 @@ const Categories = () => {
               All Categories
             </h1>
             <p className="sm:w-3/5 leading-relaxed text-[40px] sm:pl-10 pl-0">
-              Here is all the categories which is in our site, feel free to
-              choose and explore.
+              Here are all the categories on our site. Feel free to choose and
+              explore.
             </p>
           </div>
         </div>
-        <Link to={"/"}>
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            {categories &&
-              categories.map((item, index) => (
-                <SingleCategory
-                  key={index}
-                  name={item.name}
-                  image={item.image}
-                  id={item.id}
-                />
-              ))}
-          </div>
-        </Link>
+        <div className="w-full flex flex-wrap -m-4">
+          {categories &&
+            categories.map((item) => (
+              <div key={item.id} className="w-full sm:w-1/2 p-4">
+                <Link to={`/categoryPage/${item.id}`}>
+                  <SingleCategory
+                    name={item.name}
+                    image={item.image}
+                    id={item.id}
+                  />
+                </Link>
+              </div>
+            ))}
+        </div>
       </div>
     </section>
   );

@@ -19,7 +19,7 @@ const DetailPage = () => {
   }, []);
 
   const toggleModal = () => {
-    setIsModalOpen(!isModalOpen); // Toggle modal visibility
+    setIsModalOpen(!isModalOpen);
   };
 
   return (
@@ -70,7 +70,6 @@ const DetailPage = () => {
         </div>
       </div>
 
-      {/* Modal for contact information */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="modal-overlay absolute inset-0 bg-black opacity-50"></div>
