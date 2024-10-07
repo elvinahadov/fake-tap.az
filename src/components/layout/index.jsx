@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "./header/index.jsx";
+import Footer from "./footer/index.jsx";
 
-const Layout = ({ children }) => {
+const Layout = ({ setSearchTerm, children }) => {
   return (
-    <div>
-      <Header />
-      {children}
+    <>
+      <Header onSearch={setSearchTerm} />
+      <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 };
 

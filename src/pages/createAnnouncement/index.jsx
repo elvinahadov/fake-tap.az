@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate to navigate to login if needed
+import { useNavigate } from "react-router-dom";
 
 const CreateAnnouncement = () => {
   const [categories, setCategories] = useState([]);
@@ -22,13 +22,13 @@ const CreateAnnouncement = () => {
   const uploadPreset = "hof1ji4h";
 
   const userEmail = localStorage.getItem("userEmail");
-  const navigate = useNavigate(); // Hook to navigate between routes
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!userEmail) {
       alert("Please log in to create an announcement.");
-      navigate("/login"); // Redirect user to login page
-      return; // Prevent further execution if not logged in
+      navigate("/login");
+      return;
     }
 
     const fetchUserData = async () => {
@@ -104,7 +104,7 @@ const CreateAnnouncement = () => {
 
       alert("Announcement submitted successfully");
 
-      // Reset form fields
+
       setTitle("");
       setDescription("");
       setPrice("");

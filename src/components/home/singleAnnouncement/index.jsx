@@ -14,7 +14,7 @@ const SingleAnnouncements = ({
       <Link to={`/detailPage/${id}`}>
         <div className="bg-gray-100 p-6 rounded-lg h-[400px] flex flex-col gap-1">
           <img
-            className="h-40 w-full object-fill object-center rounded"
+            className="h-40 w-[300px] object-fill object-center rounded"
             src={`${image}`}
           />
           <p className="leading-relaxed font-bold text-red-500 text-2xl">

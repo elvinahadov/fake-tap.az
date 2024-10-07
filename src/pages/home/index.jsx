@@ -1,12 +1,12 @@
-import React from 'react'
-import Announcements from '../../components/home/announcements'
+import React from "react";
+import Announcements from "../../components/home/announcements/index.jsx";
 
-const Home = () => {
+const Home = ({ searchTerm }) => {
   return (
     <div>
-      <Announcements/>
+      <Announcements searchTerm={searchTerm} />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

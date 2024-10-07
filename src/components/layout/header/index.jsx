@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { FaSearch } from "react-icons/fa";
 import { SiZcool } from "react-icons/si";
 import { Link, useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ onSearch }) => {
   const [loggedInUser, setLoggedInUser] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
   const isLogin = localStorage.getItem("isLogin");
   const userEmail = localStorage.getItem("userEmail");
   const navigate = useNavigate();
@@ -29,9 +31,14 @@ const Header = () => {
     navigate("/login");
   };
 
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+    onSearch(event.target.value);
+  };
+
   return (
-    <header className="text-gray-600 bg-red-300 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center gap-10">
+    <header className="text-gray-600 bg-red-300">
+      <div className="container mx-auto flex p-5 flex-col md:flex-row items-center gap-10">
         <Link
           to={"/"}
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -40,23 +47,33 @@ const Header = () => {
           <span className="ml-3 font-bold text-xl">Al-Win</span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center justify-evenly gap-6">
-          <Link to={"/categories"} className="text-black font-bold text-[24px]">
+          <Link to={"/categories"} className="text-black font-bold text-[16px]">
             Categories
           </Link>
           <Link
             to={"/createAnnouncement"}
-            className="text-black font-bold text-[24px]"
+            className="text-black font-bold text-[16px]"
           >
             Create Announcement
           </Link>
           <Link
             to={"/userAnnouncements"}
-            className="text-black font-bold text-[24px]"
+            className="text-black font-bold text-[16px]"
           >
             My Announcements
           </Link>
         </nav>
-        {loggedInUser ? ( // Check if loggedInUser is not null
+        <div className="flex items-center relative">
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            placeholder="Search announcements"
+            className="py-2 px-6 border rounded border-gray-600 placeholder:text-gray-700"
+          />
+          <FaSearch className="text-[18px] absolute right-4 top-3 text-gray-500" />
+        </div>
+        {loggedInUser ? (
           <div className="flex items-center gap-10">
             <button
               onClick={handleLogout}
@@ -78,7 +95,6 @@ const Header = () => {
             </button>
           </Link>
         )}
-        {/* Render nothing if user is not logged in */}
       </div>
     </header>
   );

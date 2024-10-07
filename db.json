@@ -25,7 +25,21 @@
       "date": "2024-10-05",
       "time": "19:02",
       "contactEmail": "elvin@gmail.com",
-      "contactPhone": "+994-055-555-55-55"
+      "contactPhone": "055-555-55-55"
+    },
+    {
+      "id": "ee55",
+      "userId": "86f5",
+      "title": "sasasa",
+      "description": "ytgfhgchgjhfhghgjhgf",
+      "price": "100",
+      "categoryId": "5",
+      "location": "baku",
+      "imageUrl": "https://res.cloudinary.com/dj294wevk/image/upload/v1728296153/apef5jop9yl7xnplxcfq.jpg",
+      "date": "2024-10-07",
+      "time": "14:15",
+      "contactEmail": "elmir@gmail.com",
+      "contactPhone": "55555555555555555555555555555555"
     }
   ],
   "categories": [
@@ -76,6 +90,12 @@
       "name": "Elvin",
       "email": "elvin@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "86f5",
+      "name": "Elmir",
+      "email": "elmir@gmail.com",
+      "password": "elmir123"
     }
   ]
 }

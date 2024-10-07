@@ -9,15 +9,17 @@ import CreateAnnouncement from "./pages/createAnnouncement/index.jsx";
 import UserAnnouncements from "./pages/userAnnouncements/index.jsx";
 import DetailPage from "./pages/detailPage/index.jsx";
 import SingleCategoryPage from "./pages/singleCategoryPage/index.jsx";
+import { useState } from "react";
 
 function App({ children }) {
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <>
-      <Layout>
-        {children}
+      <Layout setSearchTerm={setSearchTerm}>
         <Routes>
           <Route path="/categories" element={<Categories />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home searchTerm={searchTerm} />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/createAnnouncement" element={<CreateAnnouncement />} />
