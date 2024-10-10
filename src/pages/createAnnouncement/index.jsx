@@ -87,6 +87,7 @@ const CreateAnnouncement = () => {
       time,
       contactEmail,
       contactPhone,
+      reviews: [],
     };
 
     try {
@@ -103,8 +104,6 @@ const CreateAnnouncement = () => {
       }
 
       alert("Announcement submitted successfully");
-
-
       setTitle("");
       setDescription("");
       setPrice("");
@@ -126,7 +125,7 @@ const CreateAnnouncement = () => {
   };
 
   return (
-    <section className="flex items-center justify-center min-h-screen bg-red-100">
+    <section className="flex items-center justify-center min-h-screen bg-red-100 py-4">
       <form
         className="max-w-lg mx-auto p-4 bg-white rounded shadow-md"
         onSubmit={handleSubmit}

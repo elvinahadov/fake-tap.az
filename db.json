@@ -1,45 +1,29 @@
 {
   "announcements": [
     {
-      "id": "3793",
+      "id": "1bc2",
       "userId": "39ce",
-      "title": "BMW F30 rent per hour",
-      "description": "Experience the Ultimate Driving Machine!\n\nRent our luxurious BMW F30 for an exhilarating driving experience that combines performance, style, and comfort. This sleek sedan features a powerful engine and precise handling, making it perfect for both city cruising and open highways.\n\nKey Features:\n\nEngine: Enjoy a responsive and dynamic driving experience with the F30's efficient and powerful engine options.\nInterior: Immerse yourself in the comfort of a meticulously designed interior with premium materials, advanced technology, and spacious seating for up to five passengers.\nInfotainment System: Stay connected and entertained with BMW's intuitive infotainment system, complete with navigation, Bluetooth connectivity, and high-quality sound.\nSafety: Drive with confidence thanks to advanced safety features, including multiple airbags, stability control, and parking sensors.\nRental Details:\n\nPrice: $XX per hour (minimum 2-hour rental)\nPick-up/Drop-off: Convenient locations available for pick-up and drop-off.\nMileage: XX miles included per rental hour, with additional mileage available at a nominal fee.\nPerfect For:\n\nSpecial occasions, weekend getaways, or simply enjoying a drive in one of the best luxury sedans on the market.\nBook your BMW F30 today and elevate your driving experience!",
+      "title": "Temporibus occaecat ",
+      "description": "Experience the Ultimate Driving Machine! Rent our luxurious BMW F30 for an exhilarating driving experience that combines performance, style, and comfort. This sleek sedan features a powerful engine and precise handling, making it perfect for both city cruising and open highways. Key Features: Engine: Enjoy a responsive and dynamic driving experience with the F30's efficient and powerful engine options. Interior: Immerse yourself in the comfort of a meticulously designed interior with premium materials, advanced technology, and spacious seating for up to five passengers. Infotainment System: Stay connected and entertained with BMW's intuitive infotainment system, complete with navigation, Bluetooth connectivity, and high-quality sound. Safety: Drive with confidence thanks to advanced safety features, including multiple airbags, stability control, and parking sensors. Rental Details: Price: $XX per hour (minimum 2-hour rental) Pick-up/Drop-off: Convenient locations available for pick-up and drop-off. Mileage: XX miles included per rental hour, with additional mileage available at a nominal fee. Perfect For: Special occasions, weekend getaways, or simply enjoying a drive in one of the best luxury sedans on the market. Book your BMW F30 today and elevate your driving experience!",
       "price": "80",
       "categoryId": "7",
-      "location": "Baku Yasamal",
-      "imageUrl": "https://res.cloudinary.com/dj294wevk/image/upload/v1728140018/lbq3sgucjatb94kvjqbu.webp",
-      "date": "2024-10-05",
-      "time": "18:51",
-      "contactInfo": "tel : 09999999"
-    },
-    {
-      "id": "69b5",
-      "userId": "39ce",
-      "title": "2nd hand guitar",
-      "description": "For Sale: Quality Second-Hand Acoustic Guitar - Perfect for Beginners and Enthusiasts!\n\nAre you ready to strum your first chord or add a new instrument to your collection? This beautiful second-hand acoustic guitar is the perfect choice!\n\nFeatures:\n\nBrand: [Insert Brand Name]\nModel: [Insert Model Name]\nCondition: Gently used, with minor signs of wear that add character.\nWood Type: [Insert type of wood, e.g., spruce top, mahogany back and sides], providing rich, resonant sound.\nSize: Standard dreadnought body, perfect for all playing styles.\nDetails:\n\nThis guitar has been well-maintained and comes from a smoke-free home. It delivers excellent sound quality, making it perfect for practice, performances, or jamming with friends.\nIncludes original [case, strap, or any accessories, if available].\nIdeal for beginners looking for their first instrument or seasoned players seeking an affordable option.\nWhy I’m Selling: I'm parting with this guitar as I’m upgrading to a higher-end model. I want to pass it on to someone who will enjoy and cherish it as much as I have.\n\nPrice: [Insert Price] - Cash only, please.\n\nFeel free to reach out for more details or to schedule a time to try it out. Don’t miss this chance to own a great guitar at a fantastic price!",
-      "price": "120",
-      "categoryId": "4",
-      "location": "Zaqatala",
-      "imageUrl": "https://res.cloudinary.com/dj294wevk/image/upload/v1728140641/ggwddmhzkzxdfhfpfvlp.jpg",
-      "date": "2024-10-05",
-      "time": "19:02",
+      "location": "Baku-Zaqatala",
+      "imageUrl": "https://res.cloudinary.com/dj294wevk/image/upload/v1728560133/koatvjv0u8effhxdfeli.jpg",
+      "date": "10/10/2024",
+      "time": "15:35",
       "contactEmail": "elvin@gmail.com",
-      "contactPhone": "055-555-55-55"
-    },
-    {
-      "id": "ee55",
-      "userId": "86f5",
-      "title": "sasasa",
-      "description": "ytgfhgchgjhfhghgjhgf",
-      "price": "100",
-      "categoryId": "5",
-      "location": "baku",
-      "imageUrl": "https://res.cloudinary.com/dj294wevk/image/upload/v1728296153/apef5jop9yl7xnplxcfq.jpg",
-      "date": "2024-10-07",
-      "time": "14:15",
-      "contactEmail": "elmir@gmail.com",
-      "contactPhone": "55555555555555555555555555555555"
+      "contactPhone": "055-555-55-55",
+      "reviews": [
+        {
+          "reviewId": 1,
+          "announcementId": "1bc2",
+          "userId": "39ce",
+          "comment": "kflvakfvksavfkas",
+          "rating": 5,
+          "title": "jdsafbaskjvfsak;vfa",
+          "date": "10/10/2024"
+        }
+      ]
     }
   ],
   "categories": [

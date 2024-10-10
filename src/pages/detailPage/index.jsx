@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import AddReview from "../../components/detailPage/addReview";
+import SingleReview from "../../components/detailPage/singleReview";
 
 const DetailPage = () => {
   const params = useParams();
   const [data, setData] = useState([]);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Modal visibility state
+  const [reviews, setReviews] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const fetchAnnouncement = async () => {
     const response = await fetch(
@@ -12,6 +15,7 @@ const DetailPage = () => {
     );
     const data = await response.json();
     setData(data);
+    setReviews(data.reviews);
   };
 
   useEffect(() => {
@@ -69,7 +73,25 @@ const DetailPage = () => {
           />
         </div>
       </div>
-
+      <div className="container max-w-[1128px] mx-auto items-center flex">
+        {reviews.length > 0 ? (
+          <div>
+            <h3 className="text-lg font-semibold">Reviews</h3>
+            {reviews.map((review) => (
+              <div key={review.reviewId} className="border-b py-2">
+                <h4 className="font-bold">{review.title}</h4>
+                <p>{review.comment}</p>
+                <p className="text-sm text-gray-500">
+                  Rating: {review.rating} / 5
+                </p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p>No reviews yet.</p>
+        )}
+        <AddReview />
+      </div>
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="modal-overlay absolute inset-0 bg-black opacity-50"></div>
